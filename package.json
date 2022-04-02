@@ -1,22 +1,23 @@
 {
    "name": "test-fruitts-berries",
    "version": "1.0.0",
-   "description": "'test'",
+   "description": "",
    "main": "index.js",
    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "sass": "sass scss/style.scss css/style.css --watch"
    },
    "repository": {
       "type": "git",
       "url": "git+https://github.com/vadimshamshin/test-fruitts-berrries.git"
    },
-   "keywords": [
-      "1111"
-   ],
-   "author": "vadim shamshin",
+   "author": "",
    "license": "ISC",
    "bugs": {
       "url": "https://github.com/vadimshamshin/test-fruitts-berrries/issues"
    },
-   "homepage": "https://github.com/vadimshamshin/test-fruitts-berrries#readme"
+   "homepage": "https://github.com/vadimshamshin/test-fruitts-berrries#readme",
+   "dependencies": {
+      "node-sass": "^7.0.1"
+   }
 }

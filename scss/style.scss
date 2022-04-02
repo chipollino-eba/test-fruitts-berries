@@ -1,0 +1,273 @@
+// Переменные
+
+$purple: #ceafc8;
+$red: #fc8663;
+$green: #88bcb9;
+$yellow: #ffd452;
+$white: #ffffff;
+$oneblack: #292b2a;
+$twoblack: #052e43;
+$gray: #959595;
+$lg: 1px solid #d7d7d7;
+
+$r: "Roboto Condensed", "Arial", sans-serif;
+$a: "Amatic SC", "Arial", sans-serif;
+
+$effect: background 0.3s ease-in-out;
+
+.link {
+   text-decoration: none;
+}
+
+.list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.btn {
+   padding: 0;
+   border: none;
+   font: inherit;
+   color: inherit;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.main-body {
+   width: 1920px;
+   font-family: $r;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 18px;
+   color: $twoblack;
+   background-color: $white;
+}
+
+.main-header {
+   height: 115px;
+   padding: 30px 100px 80px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   width: 378px;
+   .menu__wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+   .menu__wrapper:hover {
+      color: $purple;
+      transition: $effect;
+   }
+   .menu__wrapper:hover .btn-burger {
+      background-image: url("/img/svg/burger-purple.svg");
+   }
+   .menu__text {
+      font-size: 11px;
+      text-transform: uppercase;
+      line-height: 13px;
+      text-align: center;
+   }
+}
+
+.line-gray {
+   border: $lg;
+}
+
+.btn-burger {
+   width: 35px;
+   height: 14px;
+   margin: 4px;
+   background-image: url("/img/svg/burger.svg");
+   transition: $effect;
+}
+
+.menu__list {
+   // display: flex;
+   // flex-direction: column;
+   // justify-content: space-between;
+   // СДЕЛАТЬ ОТСТУПЫ
+}
+
+.link__number {
+   color: $oneblack;
+}
+
+.number-text {
+   color: $gray;
+   padding-left: 12px;
+}
+
+.main-header__logo {
+}
+
+.user {
+   display: flex;
+   justify-content: space-between;
+   width: 190px;
+   height: 28px;
+   margin-right: 100px;
+}
+
+.btn-search {
+   width: 25px;
+   height: 25px;
+   background-image: url("/img/svg/search.svg");
+   background-repeat: no-repeat;
+}
+
+.btn-search:hover {
+   background-image: url("/img/svg/search-purple.svg");
+   transition: $effect;
+}
+
+.btn-basket {
+   width: 28px;
+   height: 28px;
+   background-image: url("/img/svg/basket.svg");
+   background-repeat: no-repeat;
+}
+
+.btn-basket:hover {
+   background-image: url("/img/svg/basket-purple.svg");
+   transition: $effect;
+}
+
+.line-basket {
+}
+
+.basket {
+   display: flex;
+}
+
+.number {
+   width: 25px;
+   height: 15px;
+   margin-left: 15px;
+   margin-top: 7px;
+   background-image: url("/img/svg/number-product.svg");
+   background-repeat: no-repeat;
+}
+
+.container {
+   width: 1140px;
+   height: 562px;
+   margin-left: 391px;
+}
+
+.products-list {
+   display: grid;
+   grid-template-columns: 360px 360px 360px;
+   grid-template-rows: 266px 266px;
+   gap: 30px;
+}
+
+.products-list__item {
+   position: relative;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+   border-radius: 8px;
+}
+
+.products-type {
+   font-family: $a;
+   font-size: 40px;
+   line-height: 50px;
+   font-weight: 700;
+   padding-left: 40px;
+   padding-top: 40px;
+}
+
+.products-description {
+   color: $twoblack;
+   padding-left: 40px;
+   padding-top: 5px;
+   padding-bottom: 47px;
+}
+
+.products-btn {
+   font-weight: 500;
+   padding-left: 40px;
+}
+
+.separate {
+   color: $oneblack;
+}
+
+.separate-sale {
+   padding-bottom: 66px;
+}
+
+.btn-green {
+   color: $green;
+   font-weight: 500;
+   // padding-top: 47px;
+}
+
+.btn-red {
+   color: $red;
+   font-weight: 500;
+   // padding-top: 47px;
+}
+// 
+.btn-yellow {
+   color: $yellow;
+   font-weight: 700;
+   // padding-top: 47px;
+}
+
+.btn-purple {
+   color: $purple;
+   font-weight: 700;
+   // padding-top: 66px;
+}
+
+.fruits {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   width: 750px;
+   height: 266px;
+}
+
+.vegetables {
+   width: 360px;
+   height: 562px;
+}
+
+.berries {
+   width: 360px;
+   height: 266px;
+}
+
+.juices {
+   width: 360px;
+   height: 266px;
+}
+
+.pic {
+   position: absolute;
+}
+
+.pic-fruits {
+   top: 24px;
+   right: 0;
+}
+
+.pic-vegetables {
+   top: 298px;
+   left: 65px;
+}
+
+.pic-berries {
+   top: 95px;
+   left: 167px;
+}
+
+.pic-juices {
+   top: 56px;
+   left: 199px;
+}

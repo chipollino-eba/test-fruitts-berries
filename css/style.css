@@ -1,0 +1,241 @@
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-body {
+  width: 1920px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #052e43;
+  background-color: #ffffff;
+}
+
+.main-header {
+  height: 115px;
+  padding: 30px 100px 80px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 378px;
+}
+.menu .menu__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu__wrapper:hover {
+  color: #ceafc8;
+  transition: background 0.3s ease-in-out;
+}
+.menu .menu__wrapper:hover .btn-burger {
+  background-image: url("/img/svg/burger-purple.svg");
+}
+.menu .menu__text {
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 13px;
+  text-align: center;
+}
+
+.line-gray {
+  border: 1px solid #d7d7d7;
+}
+
+.btn-burger {
+  width: 35px;
+  height: 14px;
+  margin: 4px;
+  background-image: url("/img/svg/burger.svg");
+  transition: background 0.3s ease-in-out;
+}
+
+.link__number {
+  color: #292b2a;
+}
+
+.number-text {
+  color: #959595;
+  padding-left: 12px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+  height: 28px;
+  margin-right: 100px;
+}
+
+.btn-search {
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/svg/search.svg");
+  background-repeat: no-repeat;
+}
+
+.btn-search:hover {
+  background-image: url("/img/svg/search-purple.svg");
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-basket {
+  width: 28px;
+  height: 28px;
+  background-image: url("/img/svg/basket.svg");
+  background-repeat: no-repeat;
+}
+
+.btn-basket:hover {
+  background-image: url("/img/svg/basket-purple.svg");
+  transition: background 0.3s ease-in-out;
+}
+
+.basket {
+  display: flex;
+}
+
+.number {
+  width: 25px;
+  height: 15px;
+  margin-left: 15px;
+  margin-top: 7px;
+  background-image: url("/img/svg/number-product.svg");
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1140px;
+  height: 562px;
+  margin-left: 391px;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  grid-template-rows: 266px 266px;
+  gap: 30px;
+}
+
+.products-list__item {
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.products-type {
+  font-family: "Amatic SC", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.products-description {
+  color: #052e43;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 47px;
+}
+
+.products-btn {
+  font-weight: 500;
+  padding-left: 40px;
+}
+
+.separate {
+  color: #292b2a;
+}
+
+.separate-sale {
+  padding-bottom: 66px;
+}
+
+.btn-green {
+  color: #88bcb9;
+  font-weight: 500;
+}
+
+.btn-red {
+  color: #fc8663;
+  font-weight: 500;
+}
+
+.btn-yellow {
+  color: #ffd452;
+  font-weight: 700;
+}
+
+.btn-purple {
+  color: #ceafc8;
+  font-weight: 700;
+}
+
+.fruits {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 750px;
+  height: 266px;
+}
+
+.vegetables {
+  width: 360px;
+  height: 562px;
+}
+
+.berries {
+  width: 360px;
+  height: 266px;
+}
+
+.juices {
+  width: 360px;
+  height: 266px;
+}
+
+.pic {
+  position: absolute;
+}
+
+.pic-fruits {
+  top: 24px;
+  right: 0;
+}
+
+.pic-vegetables {
+  top: 298px;
+  left: 65px;
+}
+
+.pic-berries {
+  top: 95px;
+  left: 167px;
+}
+
+.pic-juices {
+  top: 56px;
+  left: 199px;
+}
+
+/*# sourceMappingURL=style.css.map */

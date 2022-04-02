@@ -3,20 +3,34 @@
 
 <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Fruitts & Berries</title>
+   <link href="css/reset.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
    <link href="css/normalize.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="main-body">
-   <header class="main-haeder">
+   <header class="main-header">
       <div class="menu">
-         <p class="menu__text menu__burger">Меню</p>
+         <div class="menu__wrapper">
+            <p class="menu__text">Меню</p>
+            <button class="btn btn-burger">
+            </button>
+         </div>
+         <div class="line-gray"></div>
+
          <ul class="list menu__list">
 
             <li class="menu__list-item">
                <a class="link" href="tel:+78312910707">
-                  <span class="link__number">+7 (831)291-07-07</span>
+                  <span class="link__number">+7 (831) 291-07-07</span>
                </a>
                <span class="number-text">горячая линия</span>
             </li>
@@ -30,42 +44,51 @@
 
          </ul>
       </div>
-      <img class="main-haeder__logo" src="img/logo.svg" width="217" height="56" alt="Логотип компании">
+
+      <img class="main-header__logo" src="img/logo.svg" width="217" height="56" alt="Логотип компании">
+
       <div class="user">
-         <div class="user__search"></div>
-         <div class="user__basket"></div>
+         <button class="btn btn-search"></button>
+         <div class="line-gray line-basket"></div>
+         <div class="basket">
+            <button class="btn btn-basket"></button>
+            <div class="number"></div>
+         </div>
+
       </div>
+
+
    </header>
 
    <div class="container">
-      <ul class="list products-list products">
+      <ul class="list products-list">
 
-         <li class="products-list__item">
-            <h2 class="products__type">Фрукты</h2>
-            <p class="products__description">Скидка 20% на турецкие фрукты</p>
-            <button class="products__btn btn-purple">Смотреть</button>
-            <img class="pic pic-fruits" src="img/fruits.png" alt="Изображение набора фруктов">
+         <li class="products-list__item fruits">
+            <h2 class="products-type separate">Фрукты</h2>
+            <p class="products-description separate separate-sale">Скидка 20% на турецкие фрукты</p>
+            <button class="btn products-btn btn-purple">Смотреть</button>
+            <img class="pic pic-fruits" src="img/fruits.jpg" alt="Изображение набора фруктов">
          </li>
 
-         <li class="products-list__item">
-            <h2 class="products__type">Овощи</h2>
-            <p class="products__description">Горшочек свежей зелени в подарок при любой покупке</p>
-            <button class="products__btn btn-yellow">Смотреть</button>
-            <img class="pic pic-vegetables" src="img/vegetables.png" alt="Изображение набора овощей">
+         <li class="products-list__item vegetables">
+            <h2 class="products-type">Овощи</h2>
+            <p class="products-description">Горшочек свежей зелени в подарок при<br> любой покупке</p>
+            <button class="btn products-btn btn-yellow">Смотреть</button>
+            <img class="pic pic-vegetables" src="img/vegetables.jpg" alt="Изображение набора овощей">
          </li>
 
-         <li class="products-list__item">
-            <h2 class="products__type">Ягоды</h2>
-            <p class="products__description">Сезонные новинки</p>
-            <button class="products__btn btn-red">Смотреть</button>
-            <img class="pic pic-berries" src="img/berries.png" alt="Изображение набора ягод">
+         <li class="products-list__item berries">
+            <h2 class="products-type">Ягоды</h2>
+            <p class="products-description">Сезонные новинки</p>
+            <button class="btn products-btn btn-red">Смотреть</button>
+            <img class="pic pic-berries" src="img/berries.jpg" alt="Изображение набора ягод">
          </li>
 
-         <li class="products-list__item">
-            <h2 class="products__type">Соки</h2>
-            <p class="products__description">Новые вкусы</p>
-            <button class="products__btn btn-green">Смотреть</button>
-            <img class="pic pic-juices" src="img/juices.png" alt="Изображение сока в стекланых бутылочках">
+         <li class="products-list__item juices">
+            <h2 class="products-type">Соки</h2>
+            <p class="products-description">Новые вкусы</p>
+            <button class="btn products-btn btn-green">Смотреть</button>
+            <img class="pic pic-juices" src="img/juices.jpg" alt="Изображение сока в стекланых бутылочках">
          </li>
 
       </ul>
