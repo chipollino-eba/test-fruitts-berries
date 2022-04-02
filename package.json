@@ -1,0 +1,22 @@
+{
+   "name": "test-fruitts-berries",
+   "version": "1.0.0",
+   "description": "'test'",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vadimshamshin/test-fruitts-berrries.git"
+   },
+   "keywords": [
+      "1111"
+   ],
+   "author": "vadim shamshin",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/vadimshamshin/test-fruitts-berrries/issues"
+   },
+   "homepage": "https://github.com/vadimshamshin/test-fruitts-berrries#readme"
+}
