@@ -65,7 +65,7 @@ $effect: background 0.3s ease-in-out;
       transition: $effect;
    }
    .menu__wrapper:hover .btn-burger {
-      background-image: url("/img/svg/burger-purple.svg");
+      background-image: url("img/svg/burger-purple.svg");
    }
    .menu__text {
       font-size: 11px;
@@ -83,7 +83,7 @@ $effect: background 0.3s ease-in-out;
    width: 35px;
    height: 14px;
    margin: 4px;
-   background-image: url("/img/svg/burger.svg");
+   background-image: url("img/svg/burger.svg");
    transition: $effect;
 }
 
@@ -117,24 +117,24 @@ $effect: background 0.3s ease-in-out;
 .btn-search {
    width: 25px;
    height: 25px;
-   background-image: url("/img/svg/search.svg");
+   background-image: url("img/svg/search.svg");
    background-repeat: no-repeat;
 }
 
 .btn-search:hover {
-   background-image: url("/img/svg/search-purple.svg");
+   background-image: url("img/svg/search-purple.svg");
    transition: $effect;
 }
 
 .btn-basket {
    width: 28px;
    height: 28px;
-   background-image: url("/img/svg/basket.svg");
+   background-image: url("img/svg/basket.svg");
    background-repeat: no-repeat;
 }
 
 .btn-basket:hover {
-   background-image: url("/img/svg/basket-purple.svg");
+   background-image: url("img/svg/basket-purple.svg");
    transition: $effect;
 }
 
@@ -150,7 +150,7 @@ $effect: background 0.3s ease-in-out;
    height: 15px;
    margin-left: 15px;
    margin-top: 7px;
-   background-image: url("/img/svg/number-product.svg");
+   background-image: url("img/svg/number-product.svg");
    background-repeat: no-repeat;
 }
 
