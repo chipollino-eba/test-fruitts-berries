@@ -4,6 +4,10 @@
 
 .header {
    padding: 30px 100px 80px 100px;
+   max-width: 1920px;
+   min-width: 1140px;
+   box-sizing: border-box;
+   margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -59,9 +63,10 @@
 .header__right {
    display: flex;
    justify-content: space-between;
-   width: 190px;
+   width: 378px;
    height: 28px;
-   margin-right: 100px;
+   box-sizing: border-box;
+   padding-left: 378px - 190px;
    &-search {
       @include transition(0.2s);
       @include size(25px);
