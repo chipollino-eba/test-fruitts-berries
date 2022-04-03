@@ -37,7 +37,7 @@ body {
 .header__left {
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
+  width: 1920px;
 }
 .header__left-button {
   transition: all 0.2s ease-in-out;
