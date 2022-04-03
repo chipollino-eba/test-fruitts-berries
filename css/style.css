@@ -1,5 +1,5 @@
 body {
-  min-width: 1920px;
+  width: 1920px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -37,7 +37,7 @@ body {
 .header__left {
   display: flex;
   justify-content: space-between;
-  width: 1920px;
+  width: 378px;
 }
 .header__left-button {
   transition: all 0.2s ease-in-out;
@@ -45,7 +45,6 @@ body {
   font-size: 11px;
   line-height: 13px;
   text-align: center;
-  padding-right: 50px;
 }
 .header__left-button:hover {
   color: #ceafc8;
@@ -67,11 +66,9 @@ body {
 
 .header__left-list .header__left-item .link__number {
   color: #292b2a;
-  padding-left: 50px;
 }
 .header__left-list .header__left-item-text {
   color: #959595;
-  padding-left: 12px;
 }
 
 .header__right {
@@ -129,6 +126,7 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   overflow: hidden;
+  z-index: 1;
 }
 .products .product__image {
   position: absolute;
