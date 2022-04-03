@@ -3,20 +3,19 @@
 
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width">
    <title>Fruitts & Berries</title>
-   <link href="css/reset.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
-   <link href="css/normalize.css" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+   <link href="css/reset.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+
 </head>
 
-<body class="main-body">
+<body>
    <header class="header">
       <div class="header__left">
          <button class=" header__left-button">
@@ -27,7 +26,6 @@
          <div class="line-gray"></div>
 
          <ul class="header__left-list">
-
             <li class="header__left-item">
                <a class="link" href="tel:+78312910707">
                   <span class="link__number">+7 (831) 291-07-07</span>
@@ -41,7 +39,6 @@
                </a>
                <span class="header__left-item-text">интернет магазин</span>
             </li>
-
          </ul>
       </div>
 
@@ -49,48 +46,60 @@
 
       <div class="header__right">
          <button class="header__right-search"></button>
+
          <div class="line-gray"></div>
+
          <button class="basket">
             <div class="basket__icon"></div>
             <div class="basket__label"></div>
          </button>
-
       </div>
    </header>
 
    <div class="container">
       <ul class="products">
-
          <li class="products__item product">
-            <h2 class="product__type">Фрукты</h2>
-            <p class="product__description">Скидка 20% на турецкие фрукты</p>
-            <button class="product__button product__button_purple">Смотреть</button>
+            <div class="product__overlay"></div>
+            <div class="product__wrapper">
+               <h2 class="product__type">Фрукты</h2>
+               <p class="product__description">Скидка 20% на турецкие фрукты</p>
+               <button class="product__button product__button_purple">Смотреть</button>
+            </div>
             <img class="product__image" src="img/fruits.jpg" alt="Изображение набора фруктов">
          </li>
 
          <li class="products__item product">
-            <h2 class="product__type">Овощи</h2>
-            <p class="product__description">Горшочек свежей зелени в подарок при<br> любой покупке</p>
-            <button class="product__button product__button_yellow">Смотреть</button>
+            <div class="product__overlay"></div>
+            <div class="product__wrapper">
+               <h2 class="product__type">Овощи</h2>
+               <p class="product__description">Горшочек свежей зелени в подарок при<br> любой покупке</p>
+               <button class="product__button product__button_yellow">Смотреть</button>
+            </div>
             <img class="product__image" src="img/vegetables.jpg" alt="Изображение набора овощей">
          </li>
 
          <li class="products__item product">
-            <h2 class="product__type">Ягоды</h2>
-            <p class="product__description">Сезонные новинки</p>
-            <button class="product__button product__button_red">Смотреть</button>
+            <div class="product__overlay"></div>
+            <div class="product__wrapper">
+               <h2 class="product__type">Ягоды</h2>
+               <p class="product__description">Сезонные новинки</p>
+               <button class="product__button product__button_red">Смотреть</button>
+            </div>
             <img class="product__image" src="img/berries.jpg" alt="Изображение набора ягод">
          </li>
 
          <li class="products__item product">
-            <h2 class="product__type">Соки</h2>
-            <p class="product__description">Новые вкусы</p>
-            <button class="product__button product__button_green">Смотреть</button>
+            <div class="product__overlay"></div>
+            <div class="product__wrapper">
+               <h2 class="product__type">Соки</h2>
+               <p class="product__description">Новые вкусы</p>
+               <button class="product__button product__button_green">Смотреть</button>
+            </div>
             <img class="product__image" src="img/juices.jpg" alt="Изображение сока в стекланых бутылочках">
          </li>
-
       </ul>
    </div>
+   <script src="./js/index.js"></script>
 </body>
 
 </html>

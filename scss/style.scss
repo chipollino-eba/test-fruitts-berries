@@ -1,51 +1,8 @@
-// Переменные
-
-$purple: #ceafc8;
-$red: #fc8663;
-$green: #88bcb9;
-$yellow: #ffd452;
-$white: #ffffff;
-$oneblack: #292b2a;
-$twoblack: #052e43;
-$gray: #959595;
-$lg: 1px solid #d7d7d7;
-
-$r: "Roboto Condensed", "Arial", sans-serif;
-$a: "Amatic SC", "Arial", sans-serif;
-
-$effect: background 0.3s ease-in-out;
-
-body {
-   width: 1920px;
-   font-family: $r;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 18px;
-   color: $twoblack;
-   background-color: $white;
-}
-
-.link {
-   text-decoration: none;
-}
-
-.list {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-
-.btn {
-   padding: 0;
-   border: none;
-   font: inherit;
-   color: inherit;
-   background-color: transparent;
-   cursor: pointer;
-}
+@import "./variables.scss";
+@import "./normalize.scss";
+@import "./mixins.scss";
 
 .header {
-   height: 115px;
    padding: 30px 100px 80px 100px;
    display: flex;
    justify-content: space-between;
@@ -55,56 +12,51 @@ body {
 .header__left {
    display: flex;
    justify-content: space-between;
-   width: 378px;
+   max-width: 100%;
 
    &-button {
+      @include transition(0.2s);
       @extend .btn;
       text-transform: uppercase;
       font-size: 11px;
       line-height: 13px;
       text-align: center;
+      padding-right: 50px;
    }
 
    &-button:hover {
       color: $purple;
-      transition: $effect;
    }
 
    .btn-burger {
+      @include transition(0.2s);
+      @include backgroundImage("../img/svg/burger.svg");
       width: 35px;
       height: 14px;
       margin: 4px;
-      background-image: url("../img/svg/burger.svg");
-      transition: $effect;
    }
 
    &-button:hover .btn-burger {
-      background-image: url("../img/svg/burger-purple.svg");
+      @include backgroundImage("../img/svg/burger-purple.svg");
    }
 }
 
 .line-gray {
-   border: $lg;
+   border: $lineBorder;
 }
 
 .header__left-list {
    @extend .list;
-   // display: flex;
-   // flex-direction: column;
-   // justify-content: space-between;
-   // СДЕЛАТЬ ОТСТУПЫ
    .header__left-item {
       .link__number {
-         color: $oneblack;
+         color: $darkBlack;
+         padding-left: 50px;
       }
       &-text {
          color: $gray;
          padding-left: 12px;
       }
    }
-}
-
-.header__center {
 }
 
 .header__right {
@@ -114,37 +66,32 @@ body {
    height: 28px;
    margin-right: 100px;
    &-search {
+      @include transition(0.2s);
+      @include size(25px);
+      @include backgroundImage("../img/svg/search.svg");
       @extend .btn;
-      width: 25px;
-      height: 25px;
-      background-image: url("../img/svg/search.svg");
-      background-repeat: no-repeat;
    }
    &-search:hover {
-      background-image: url("../img/svg/search-purple.svg");
-      transition: $effect;
+      @include backgroundImage("../img/svg/search-purple.svg");
    }
 }
 .basket {
    @extend .btn;
    display: flex;
    &__icon {
-      width: 28px;
-      height: 28px;
-      background-image: url("../img/svg/basket.svg");
-      background-repeat: no-repeat;
+      @include transition(0.2s);
+      @include size(28px);
+      @include backgroundImage("../img/svg/basket.svg");
       &:hover {
-         background-image: url("../img/svg/basket-purple.svg");
-         transition: $effect;
+         @include backgroundImage("../img/svg/basket-purple.svg");
       }
    }
    &__label {
+      @include backgroundImage("../img/svg/number-product.svg");
       width: 25px;
       height: 15px;
       margin-left: 15px;
       margin-top: 7px;
-      background-image: url("../img/svg/number-product.svg");
-      background-repeat: no-repeat;
    }
 }
 
@@ -152,6 +99,7 @@ body {
    width: 1140px;
    height: 562px;
    margin-left: 391px;
+   margin: 0 auto;
 }
 
 .products {
@@ -164,22 +112,31 @@ body {
       position: relative;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
       border-radius: 8px;
+      overflow: hidden;
       &__image {
          position: absolute;
          right: 0;
          bottom: 0;
       }
       &:nth-child(1) {
+         @include overlay($purple, 750px, 266px, horizontal);
          grid-column-start: 1;
          grid-column-end: 3;
       }
       &:nth-child(2) {
+         @include overlay($yellow, 360px, 562px, vertical);
          grid-column-start: 3;
          grid-row-start: 1;
          grid-row-end: 3;
       }
+      &:nth-child(3) {
+         @include overlay($red, 360px, 266px, horizontal);
+      }
+      &:nth-child(4) {
+         @include overlay($green, 360px, 266px, horizontal);
+      }
       &__type {
-         font-family: $a;
+         font-family: $amatic;
          font-size: 40px;
          line-height: 50px;
          font-weight: 700;
@@ -187,15 +144,27 @@ body {
          padding-top: 40px;
       }
       &__description {
-         color: $twoblack;
+         color: $lightBlack;
          padding-left: 40px;
          padding-top: 5px;
-         padding-bottom: 47px;
+         padding-bottom: 48px;
       }
       &__button {
+         @include transition();
          @extend .btn;
          font-weight: 500;
          padding-left: 40px;
+         position: relative;
+         &::after {
+            content: "";
+            @include transition();
+            @include size(65px);
+            @include backgroundImage("../img/svg/link.svg");
+            position: absolute;
+            top: -32.5px + 9px;
+            left: 0;
+            opacity: 0;
+         }
          &_purple {
             color: $purple;
          }
@@ -208,6 +177,31 @@ body {
          &_green {
             color: $green;
          }
+      }
+      &__overlay {
+         @include transition(0.4s);
+         border-radius: 100%;
+         position: absolute;
+         z-index: 1;
+         width: $circleSize;
+         height: $circleSize;
+         background: $purple;
+         transform: scale(0.0001) translate(-$circleSize, -$circleSize);
+         transform-origin: top left;
+      }
+      &:hover .product__overlay {
+         @include transition(0.4s);
+      }
+      &:hover .product__button {
+         transform: translate(34px);
+         color: $white;
+         &::after {
+            opacity: 1;
+         }
+      }
+      &__wrapper {
+         position: relative;
+         z-index: 2;
       }
    }
 }

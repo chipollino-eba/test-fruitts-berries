@@ -1,0 +1,31 @@
+@mixin overlay($color, $width, $height, $direction) {
+   $circleOffsetX: 0 !default;
+   $circleOffsetY: 0 !default;
+
+   @if $direction == horizontal {
+      $circleOffsetX: -$circleSize + $width / 2 + 30px;
+      $circleOffsetY: -$circleSize + $circleRadius + $height / 2;
+   } @else {
+      $circleOffsetX: -$circleSize + $circleRadius + $width / 2;
+      $circleOffsetY: -$circleSize + $height / 2.1;
+   }
+   &:hover .product__overlay {
+      transform: scale(1) translate($circleOffsetX, $circleOffsetY);
+   }
+   & .product__overlay {
+      background-color: $color;
+   }
+}
+
+@mixin backgroundImage($url) {
+   background: url($url) no-repeat;
+}
+
+@mixin size($size) {
+   width: $size;
+   height: $size;
+}
+
+@mixin transition($duration: 0.5s, $property: all) {
+   transition: $property $duration ease-in-out;
+}
